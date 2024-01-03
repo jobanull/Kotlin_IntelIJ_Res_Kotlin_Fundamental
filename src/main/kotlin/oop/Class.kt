@@ -1,5 +1,6 @@
 package oop
 
+import org.junit.Test
 import kotlin.reflect.KProperty
 
 class Class (val name: String,
@@ -8,19 +9,19 @@ class Class (val name: String,
            val isMammal: Boolean
 ) {
     // Properties
-    var names: String = "Dicoding Miaw"
+    var propertiesName: String = "Tatang Kurniawan"
         get(){
-            println("Fungsi Getter terpanggil")
+            println("Getter function called")
             return field
         }
         set(value){
-            println("Fungsi Setter terpanggil")
+            println("Setter function calledl")
             field = value
         }
 
 
     // Properties Delegation
-    var name2: String by DelegateName()
+    var propertiesDelegationName: String by DelegateName()
 
     fun eat(){
         println("$name makan!")
@@ -37,37 +38,16 @@ class DelegateName {
     private var value: String = "Default"
 
     operator fun getValue(classRef: Any?, property: KProperty<*>) : String {
-        println("Fungsi ini sama seperti getter untuk properti ${property.name} pada class $classRef")
+        println("This function is the same as the getter for property ${property.name} in class $classRef")
         return value
     }
 
     operator fun setValue(classRef: Any?, property: KProperty<*>, newValue: String){
-        println("Fungsi ini sama seperti setter untuk properti ${property.name} pada class $classRef")
-        println("Nilai ${property.name} dari: $value akan berubah menjadi $newValue")
+        println("This function is the same as the getter for property ${property.name} in class $classRef")
+        println("Value ${property.name} from: $value will change to $newValue")
         value = newValue
     }
 }
-
-
-// Extension Properties
-
-
-
-// Primary Constructor
-
-
-// Secondary Constructor
-
-
-// Visibility Modifiers
-
-
-// Inheritances
-
-// Overloading
-
-
-// Abstract Class
 
 // Interface
 interface IFly {
@@ -84,4 +64,28 @@ class Bird(override val numberOfWings: Int) : IFly {
 
 fun flyWithWings(bird: IFly) {
     bird.fly()
+}
+
+
+class ClassTest{
+    private val classTest = Class("Putri", 50.0, 30, true)
+    private val bird = Bird(12)
+    @Test
+    fun classTest(){
+        println(classTest.propertiesName)
+        classTest.propertiesName = "Jajang"
+        println(classTest.propertiesName)
+
+        println("==================================")
+
+        println(classTest.propertiesDelegationName)
+        classTest.propertiesDelegationName = "Maman"
+        println(classTest.propertiesDelegationName)
+    }
+
+    @Test
+    fun interfaceTest(){
+        println(bird.fly())
+        flyWithWings(bird)
+    }
 }

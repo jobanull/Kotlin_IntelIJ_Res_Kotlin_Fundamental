@@ -1,19 +1,20 @@
 package fundamental
 
+import org.junit.Test
 import kotlin.random.Random
 
 class Expression {
-    fun ifExpres(nilai : Int){
-        if(nilai <= 5){
+    fun ifExpression(value : Int){
+        if(value <= 5){
             println("Belum Lulus")
-        }else if(nilai <= 8){
+        }else if(value <= 8){
             println("Lulus")
         }else{
             println("Lulus dengan nilai sempurna")
         }
     }
 
-    fun latihanExppression(hour: Int){
+    fun ifExpression2(hour: Int){
         val openOffice = 7
         val office = if (hour > openOffice) "Office already open" else "Office close"
         println(office)
@@ -72,7 +73,25 @@ class Expression {
             else -> regis
         }
     }
-
     private fun getRegisterNumber() = Random.nextInt(100)
+}
 
+
+class ExpressionTest{
+    val expression = Expression()
+
+    @Test
+    fun ifExpression1Test(){
+        expression.ifExpression(8)
+    }
+
+    @Test
+    fun ifExpression2Test(){
+        expression.ifExpression2(0)
+    }
+
+    @Test
+    fun whenExpressionTest(){
+        expression.whenExpression(10)
+    }
 }

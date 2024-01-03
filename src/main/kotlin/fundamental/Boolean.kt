@@ -1,37 +1,50 @@
 package fundamental
 
+import org.junit.Test
 import kotlin.Boolean
 
 class Boolean {
-    fun boolean(jam : Int){
+    fun bool1(hour : Int){
 
-        var result : Boolean
-
-        result =if(jam in 7..23){
+        val result : Boolean = if(hour in 7..23){
             true
         }else {
             false
         }
         println(result)
+    }
 
-        // --------------
-
-        result = if(jam < 7 || jam > 18){
+    fun bool2(hour : Int){
+       val  result = if(hour < 7 || hour > 18){
             true
         }else{
             false
         }
         println(result)
+    }
 
-        //--------------
-
+    fun bool3(hour : Int){
         val open = 7
-        val newResult = jam > open
-        result = if(!newResult){
-            true
-        }else{
-            false
-        }
+        val newResult = hour > open
+        val result = !newResult
         println(result)
+    }
+}
+
+class BooleanTest{
+    val booleanTest = Boolean()
+
+    @Test
+    fun boolTest1(){
+        booleanTest.bool1(1)
+    }
+    @Test
+    fun boolTest2(){
+        booleanTest.bool2(1)
+    }
+
+    @Test
+    fun boolTest3(){
+        booleanTest.bool3(1)
     }
 }

@@ -1,8 +1,9 @@
 package fundamental
 
+import org.junit.Test
+
 class Nullable {
-    fun latihanNullable(){
-        val name : String? = null
+    fun nullable(name: String){
 
         if(name != null) {
             println(name)
@@ -17,12 +18,20 @@ class Nullable {
 
         val testing : String? = null
         testing!!.length
-
-
     }
 
     // Nullable Receiver
     val Int?.slice2: Int
         get() = this?.div(2) ?: 0
 
+}
+
+
+class NullableTest{
+    val nullableTest = Nullable()
+
+    @Test
+    fun nullableTest(){
+        nullableTest.nullable("Asep")
+    }
 }

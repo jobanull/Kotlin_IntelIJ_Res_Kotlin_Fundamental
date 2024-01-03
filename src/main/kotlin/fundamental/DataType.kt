@@ -1,22 +1,13 @@
 package fundamental
 
+import org.junit.Test
+
 class DataType {
 
     fun dataType(){
-        val fname= "Ikhdan"
-        val lname = "Joban"
-        println("$fname $lname")
-
-        // -----------
-
-        println("\n")
-        var a: Char ='A'
-        println(a++)
-        println(a++)
-        println(a++)
-        println(a++)
-
-        println("\n")
+        val firstName= "Ikhdan"
+        val lastName = "Joban"
+        println("$firstName $lastName")
 
         // -----------
 
@@ -27,5 +18,14 @@ class DataType {
             Line 4
         """.trimMargin()
         println(line)
+    }
+}
+
+
+class DataTypeTest{
+    val dataType = DataType()
+    @Test
+    fun dataTypeTest(){
+        dataType.dataType()
     }
 }

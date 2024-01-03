@@ -1,5 +1,7 @@
 package fundamental
 
+import org.junit.Test
+
 class Numbers{
     fun numbers(){
         val long: Long = 100L
@@ -15,5 +17,14 @@ class Numbers{
         println(double)
         println(float)
         println(maxLong)
+    }
+}
+
+class NumbersTest{
+    val numbers = Numbers()
+
+    @Test
+    fun numbersTest(){
+        numbers.numbers()
     }
 }
