@@ -1,25 +1,28 @@
 package functionalProgramming
 
+import org.junit.Test
+import java.util.*
+
 
 data class Item(val key: String, val value: Any)
 
-class SliceDistictChunked {
-    fun latihanSliceDistinctChunked(){
+class SliceDistinctChunked {
+    fun sliceDistinctChunked(){
         val total = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
         val slice = total.slice(3..6)
         val slice2 = total.slice(3..6 step 2)
 
-        println(slice)
+        println("SLICE : $slice")
+        println("SLICE2 : $slice2")
 
         val index = listOf(2, 3, 5, 8)
         val total1 = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-        val slice1 = total1.slice(index)
+        val slice3 = total1.slice(index)
 
-        println(slice1)
+        println("SLICE3 : $slice3")
 
         val distinct = total.distinct()
-
-        println(distinct)
+        println("DISTINCT : $distinct")
 
         val items = listOf(
             Item("1", "Kotlin"),
@@ -40,12 +43,21 @@ class SliceDistictChunked {
             it.length
         }
 
-        println(distinct1)
+        println("DISTINCT1 : $distinct1")
 
         val word = "QWERTY"
         val chunkedTransform = word.chunked(3) {
-            it.toString().toLowerCase()
+            it.toString().lowercase(Locale.getDefault())
         }
-        println(chunkedTransform)
+        println("CHUNKED : $chunkedTransform")
+    }
+}
+
+class SliceDistinctChunkedTest{
+    private val sliceDistinctChunked = SliceDistinctChunked()
+
+    @Test
+    fun sliceDistinctChunkedTest(){
+        sliceDistinctChunked.sliceDistinctChunked()
     }
 }

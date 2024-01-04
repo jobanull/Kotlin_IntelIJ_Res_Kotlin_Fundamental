@@ -1,9 +1,9 @@
 package controlFlow
 
+import org.junit.Test
+
 class Ranges {
     fun ranges(value: Int){
-        val rangeInts = value.rangeTo(10)
-
         val rangeInt = value..10 step 2
         rangeInt.forEach {
             print("$it ")
@@ -17,5 +17,14 @@ class Ranges {
 
         val rangeChar = 'A'.rangeTo('F')
         println(rangeChar)
+    }
+}
+
+class RangesTest{
+    private val ranges = Ranges()
+
+    @Test
+    fun rangeTest(){
+        ranges.ranges(123)
     }
 }

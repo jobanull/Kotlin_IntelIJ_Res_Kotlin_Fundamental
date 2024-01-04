@@ -3,7 +3,7 @@ package controlFlow
 import org.junit.Test
 
 class BreakAndContinue {
-    fun breakdanContinue(){
+    fun breakAndContinue(){
         val listOfInt = listOf(1, 2, 3, null, 5, null, 7)
 
         for (i in listOfInt) {
@@ -31,6 +31,6 @@ class BreakAndContinueTest{
     val breakAndContinue = BreakAndContinue()
     @Test
     fun breakAndContinueTest(){
-        breakAndContinue.breakdanContinue()
+        breakAndContinue.breakAndContinue()
     }
 }
