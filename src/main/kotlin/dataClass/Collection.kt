@@ -1,27 +1,49 @@
 package dataClass
 
+import org.junit.Test
+
 class Collection {
-    fun latihanCollectionsOperations(){
-        val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-        val evenList = numberList.filter { it % 2 == 0 }
-        val notEvenList = numberList.filterNot { it % 2 == 0 }
-        val multipliedBy5 = numberList.map { it * 5 }
-        print(numberList.count())
-        print(numberList.count { it % 3 == 0 })
+    val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+    var evenList = emptyList<Number>()
+    var notEvenList = emptyList<Number>()
+    var multipliedBy5 = emptyList<Number>()
+    fun collectionsOperations(){
+
+        evenList = numberList.filter { it % 2 == 0 }
+        notEvenList = numberList.filterNot { it % 2 == 0 }
+        multipliedBy5 = numberList.map { it * 5 }
+        println("COUNT : ${numberList.count()}")
+        println("MODULUS : ${numberList.count { it % 3 == 0 }}")
+        println("EVEN LIST : $evenList")
+        println("NOT EVEN LIST : $notEvenList")
+        println("MUTIPLIED BY 5 : $multipliedBy5")
 
         val firstOddNumber = numberList.find { it % 2 == 1 }
-        val firstOrNullNumber = numberList.firstOrNull { it % 2 == 3 }
+        val firstOrNullNumber = numberList.firstOrNull { it % 2 == 1 }
+        println("FIRST ODD NUMBER : $firstOddNumber")
+        println("FIRST ODD OR NULL NUMBER : $firstOrNullNumber")
 
         val moreThan10 = numberList.first { it > 10 }
-        print(moreThan10)
+        println("MORE THAN 10 : $moreThan10")
 
         val total = numberList.sum()
+        println("TOTAL : $total")
 
         val kotlinChar = listOf('k', 'o', 't', 'l', 'i', 'n')
         val ascendingSort = kotlinChar.sorted()
-        println(ascendingSort)
+        println("ASCENDING SORT : $ascendingSort")
 
         val descendingSort = kotlinChar.sortedDescending()
-        println(descendingSort)
+        println("DESCENDING SORT : $descendingSort")
     }
+}
+
+class CollectionTest{
+    val collection = Collection()
+
+    @Test
+    fun collectionTest(){
+        collection.collectionsOperations()
+    }
+
 }

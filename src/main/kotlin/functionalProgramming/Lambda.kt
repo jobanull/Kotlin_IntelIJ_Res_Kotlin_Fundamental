@@ -1,16 +1,38 @@
 package functionalProgramming
 
+import org.junit.Test
+
 class Lambda {
-    fun latihanLambda(){
-        val message = { println("Hello From Lambda") }
-        val printMessage = { message: String -> println(message) }
-        val messageLength = { message: String -> message.length }
-    }
+
+    val message = { println("Hello From Lambda") }
+    val printMessage = { message: String -> println(message) }
+    val messageLength = { message: String -> println(message.length) }
+
 
     // Lambda with Receiver
-    fun latihanLambdaWithReceiver(action: StringBuilder.() -> Unit): String {
+    fun lambdaWithReceiver(action: StringBuilder.() -> Unit): String {
         val stringBuilder = StringBuilder()
         stringBuilder.action()
         return stringBuilder.toString()
+    }
+}
+
+class LambdaTest{
+    private val lambda = Lambda()
+    @Test
+    fun lambdaTest(){
+        lambda.message()
+        lambda.printMessage("Jajang")
+        lambda.messageLength("Asep")
+
+        val value = lambda.lambdaWithReceiver {
+            append("Hello ")
+            append("from ")
+            append("lambda ")
+        }
+
+        println(value)
+
+
     }
 }

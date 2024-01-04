@@ -1,12 +1,16 @@
 package functionalProgramming
 
+import org.junit.Test
+
 class StandardLibrary {
-    fun latihanKotlinStandardLibrary(){
+    fun kotlinStandardLibrary(){
 
         val buildString = StringBuilder().apply {
             append("Hello ")
             append("Kotlin ")
         }
+
+        println("BUILD STRING : $buildString")
 
         // Run
         val text = "Hello"
@@ -15,22 +19,23 @@ class StandardLibrary {
             val to = this.replace("Hello", "Kotlin")
             "replace text from $from to $to"
         }
-        print("result : $result")
+        println("RUN : $result")
 
         // With
         val message = "Hello Kotlin!"
-        val result2 = with(message) {
+        val withResult = with(message) {
             println("value is $this")
             println("with length ${this.length}")
         }
+        println("WITH : $withResult")
 
         val message2 = "Hello Kotlin!"
-        val result3 = with(message2) {
+        val withResult2 = with(message2) {
             "First character is ${this[0]}" +
                     " and last character is ${this[this.length - 1]}"
         }
 
-        println(result3)
+        println("WITH RESULT : $withResult2")
 
         // Apply
         val message3 = StringBuilder().apply {
@@ -38,7 +43,7 @@ class StandardLibrary {
             append("Kotlin!")
         }
 
-        println(message3.toString())
+        println("APPLY : $message3")
 
         // Let
         val message5: String? = null
@@ -62,6 +67,17 @@ class StandardLibrary {
             println("value length -> ${it.length}")
         }
 
-        println("text -> $result4")
+        println("ALSO : $result4")
     }
+}
+
+class StandardLibraryTest{
+    private val standardLibrary = StandardLibrary()
+
+
+    @Test
+    fun standardLibraryTest(){
+        standardLibrary.kotlinStandardLibrary()
+    }
+
 }

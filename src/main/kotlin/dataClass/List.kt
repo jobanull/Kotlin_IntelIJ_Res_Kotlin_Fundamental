@@ -1,18 +1,35 @@
 package dataClass
 
-import kotlin.collections.List
+import org.junit.Test
 
 class List {
-    fun latihanList(){
-        val numberList : List<Int> = listOf(1, 2, 3, 4, 5)
-        val numberList2 = listOf(1, 2, 3, 4, 5)
-        val charList = listOf('a', 'b', 'c')
-        val anyList = listOf('a', "Kotlin", 3, true)
-        val anyList2 = mutableListOf('a', "Kotlin", 3, true)
+    var numberList = emptyList<Int>()
+    var charList = emptyList<Char>()
+    var anyList = emptyList<Any>()
+    var mutableList = mutableListOf<Any>()
+    fun list(){
+        numberList = listOf(1, 2, 3, 4, 5)
+        charList = listOf('a', 'b', 'c')
+        anyList = listOf('a', "Kotlin", 3, true)
+        mutableList = mutableListOf('a', "Kotlin", 3, true)
+        println(numberList)
+        println(charList)
+        println(anyList)
 
-        anyList2.add('d') // menambah item di akhir list
-        anyList2.add(1, "love") // menambah item pada indeks ke-1
-        anyList2[3] = false // mengubah nilai item pada indeks ke-3
-        anyList2.removeAt(0) // menghapus item pada indeks ke-0
+        mutableList.add('d') // Add an item at the end of the list
+        mutableList.add(1, "love") // Adds items at index 1
+        mutableList[3] = false // Changes the item value at the 3rd index
+        mutableList.removeAt(0) // Deletes the item at index 0
+        println(mutableList)
     }
+}
+
+class ListTest{
+    private val list = List()
+
+    @Test
+    fun listTest(){
+        list.list()
+    }
+
 }
