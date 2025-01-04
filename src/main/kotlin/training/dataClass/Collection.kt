@@ -2,76 +2,83 @@ package training.dataClass
 
 import org.junit.Test
 import original.dataClass.Collection
+import printSpace
 
 class Collection {
-    val numberList = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
-    var evenList = emptyList<Number>()
-    var notEvenList = emptyList<Number>()
-    var multipliedBy5 = emptyList<Number>()
+    // TODO 1
+    // lengkapi variable numberlist berisi listof 1 sampai 11
+    // lengkapi variable sisanya jadi emptylist number
+    val numberList = 0
+    var evenList = 0
+    var notEvenList = 0
+    var multipliedBy5 = 0
 
     fun collectionsOperations() {
         // TODO 1
         // Filter numberList untuk mendapatkan hanya angka genap dan simpan dalam evenList.
-        evenList = numberList.filter { it % 2 == 0 }
+
+        numberList.printSpace
 
         // TODO 2
         // Filter numberList untuk mendapatkan angka yang tidak genap dan simpan dalam notEvenList.
-        notEvenList = numberList.filterNot { it % 2 == 0 }
+
+        numberList.printSpace
 
         // TODO 3
         // Map numberList dengan mengalikan setiap elemen dengan 5 dan simpan hasilnya dalam multipliedBy5.
-        multipliedBy5 = numberList.map { it * 5 }
+
+        numberList.printSpace
 
         // TODO 4
         // Hitung jumlah elemen dalam numberList dan cetak hasilnya.
-        println("COUNT : ${numberList.count()}")
+        println("COUNT : $")
 
         // TODO 5
         // Hitung jumlah elemen dalam numberList yang habis dibagi 3 dan cetak hasilnya.
-        println("MODULUS : ${numberList.count { it % 3 == 0 }}")
+        println("MODULUS : $")
 
         // TODO 6
         // Cetak isi evenList yang berisi angka genap.
-        println("EVEN LIST : $evenList")
+        println("EVEN LIST : $")
 
         // TODO 7
         // Cetak isi notEvenList yang berisi angka yang tidak genap.
-        println("NOT EVEN LIST : $notEvenList")
+        println("NOT EVEN LIST : $")
 
         // TODO 8
         // Cetak hasil perkalian elemen dalam numberList dengan 5.
-        println("MUTIPLIED BY 5 : $multipliedBy5")
+        println("MUTIPLIED BY 5 : $")
 
         // TODO 9
         // Temukan angka ganjil pertama dalam numberList dan cetak hasilnya.
-        val firstOddNumber = numberList.find { it % 2 == 1 }
+        val firstOddNumber = 0
 
         // TODO 10
         // Temukan angka ganjil pertama dalam numberList atau null jika tidak ada dan cetak hasilnya.
-        val firstOrNullNumber = numberList.firstOrNull { it % 2 == 1 }
-        println("FIRST ODD NUMBER : $firstOddNumber")
-        println("FIRST ODD OR NULL NUMBER : $firstOrNullNumber")
+        val firstOrNullNumber = 0
+        println("FIRST ODD NUMBER : $")
+        println("FIRST ODD OR NULL NUMBER : $")
 
         // TODO 11
         // Temukan angka pertama yang lebih besar dari 10 dalam numberList dan cetak hasilnya.
-        val moreThan10 = numberList.first { it > 10 }
+        val moreThan10 = 0
         println("MORE THAN 10 : $moreThan10")
 
         // TODO 12
         // Hitung total semua angka dalam numberList dan cetak hasilnya.
-        val total = numberList.sum()
-        println("TOTAL : $total")
+        val total = 0
+        println("TOTAL : $")
 
         // TODO 13
         // Urutkan karakter dalam list kotlinChar secara ascending dan cetak hasilnya.
         val kotlinChar = listOf('k', 'o', 't', 'l', 'i', 'n')
-        val ascendingSort = kotlinChar.sorted()
-        println("ASCENDING SORT : $ascendingSort")
+        val ascendingSort = 0
+        println("ASCENDING SORT : $")
 
         // TODO 14
         // Urutkan karakter dalam list kotlinChar secara descending dan cetak hasilnya.
-        val descendingSort = kotlinChar.sortedDescending()
-        println("DESCENDING SORT : $descendingSort")
+        val descendingSort = 0
+        println("DESCENDING SORT : $")
     }
 }
 

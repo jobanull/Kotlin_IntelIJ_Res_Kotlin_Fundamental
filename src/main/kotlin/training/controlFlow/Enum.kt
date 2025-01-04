@@ -3,43 +3,34 @@ package training.controlFlow
 import org.junit.Test
 
 // Example 1
-enum class EnumAnimal(val value: String) {
-    // TODO 1
-    // Tambahkan elemen enum dengan nilai string untuk setiap jenis hewan (misal: CAT, DOG, LION).
-}
-
+// TODO 1
+// Buat kelas EnumAnimal
+// Tambahkan elemen enum dengan nilai string untuk setiap jenis hewan (misal: CAT, DOG, LION).
 // Example 2
-enum class EnumColors(val value: Int) {
-    // TODO 2
-    // Tambahkan elemen enum dengan nilai integer (warna dalam format heksadesimal)
-    // dan buat fungsi abstrak printValue untuk mencetak nilai setiap warna.
-    // Misal: RED, GREEN, BLUE.
-}
 
-// Example 3
-enum class EnumNumber(val value: Int) {
-    // TODO 3
-    // Tambahkan elemen enum dengan nilai integer untuk angka tertentu.
-    // Misal: ONE, TWO, THREE.
-}
 
-// Example 4
-enum class EnumName(val value: String) {
-    // TODO 4
-    // Tambahkan elemen enum dengan nilai string untuk nama tertentu.
-    // Misal: ASEP, JAJANG.
-}
+// TODO 2
+// Buat class EnumColors
+// Tambahkan elemen enum dengan nilai integer (warna dalam format heksadesimal)
+// RED : 0xFF0000
+// GREEN : 0x00FF00
+// BLUE : 0x0000FF
+// dan buat fungsi abstrak printValue untuk mencetak nilai setiap warna.
+// Misal: RED, GREEN, BLUE.
+
+
 
 class EnumTest {
     // TODO 5
-    // Deklarasikan variabel untuk EnumAnimal, EnumColors, EnumNumber, dan EnumName.
+    // Deklarasikan variabel untuk EnumAnimal, EnumColors.
 
     @Test
     fun enumTest1() {
         // TODO 6
         // Cetak nilai enum EnumAnimal menggunakan println.
         // Panggil fungsi printValue untuk setiap elemen EnumColors.
-        // Iterasi elemen EnumNumber dan cetak masing-masing.
-        // Gunakan when untuk mengecek nilai EnumName dan cetak hasilnya.
+        // Iterasi forEach elemen EnumAnimal dan cetak masing-masing.
+        // Gunakan when untuk mengecek nilai EnumAnimal dan cetak hasilnya.
+
     }
 }

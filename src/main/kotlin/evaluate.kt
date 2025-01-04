@@ -1,3 +1,8 @@
+val Any.printSpace : Unit
+    get(){
+        return println("==================||||============")
+    }
+
 //fun main(){
 //    val person = Person("Joban", 24, 25)
 //    val person2 = Person("Elsa", 29)

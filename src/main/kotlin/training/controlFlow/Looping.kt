@@ -1,26 +1,34 @@
 package training.controlFlow
 
 import org.junit.Test
+import printSpace
 
 class Looping {
     fun loooping() {
-        // TODO 1
-        // Buat sebuah range dari 1 hingga 10 dengan step 3,
-        // kemudian iterasi menggunakan for-loop dan cetak nilai setiap elemen.
 
+        // TODO
+        // Lengkapi variable ranges dengan nilai 1 sampai 1- dengan step 3
+        var ranges = Int
         // TODO 2
-        // Buat sebuah range dari 1 hingga 10 dengan step 3,
-        // kemudian iterasi menggunakan for-loop dengan pasangan index dan nilai,
-        // dan cetak nilai beserta indeksnya.
+        // iterasi variable ranges menggunakan for-loop dan cetak nilai setiap elemen.
+
+        ranges.printSpace
 
         // TODO 3
-        // Buat sebuah range dari 1 hingga 10 dengan step 3,
-        // kemudian iterasi menggunakan fungsi forEach dan cetak setiap nilai elemen.
+        // iterasi variable ranges menggunakan for-loop dengan pasangan index dan nilai,
+        // dan cetak nilai beserta indeksnya.
+
+        ranges.printSpace
 
         // TODO 4
-        // Buat sebuah range dari 1 hingga 10 dengan step 3,
-        // kemudian iterasi menggunakan fungsi forEachIndexed,
+        // iterasi variable ranges menggunakan fungsi forEach dan cetak setiap nilai elemen.
+
+        ranges.printSpace
+
+        // TODO 5
+        // iterasi variable ranges menggunakan fungsi forEachIndexed,
         // dan cetak indeks setiap elemen.
+
     }
 }
 
@@ -29,7 +37,7 @@ class LoopingTest {
 
     @Test
     fun loopingTest() {
-        // TODO 5
+        // TODO 6
         // Panggil fungsi loooping() dan verifikasi bahwa hasilnya sesuai
         // dengan ekspektasi.
     }

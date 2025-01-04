@@ -5,54 +5,50 @@ import org.junit.Test
 class Map {
     fun mapTest() {
         // TODO 1
-        // Buat map bernama capital yang berisi pasangan key-value, dengan beberapa nama kota sebagai key dan negara sebagai value.
-        val capital = mapOf(
-            "Jakarta" to "Indonesia",
-            "London" to "England",
-            "New Delhi" to "India"
-        )
+        // Buat map bernama capital yang berisi pasangan key-value kota-negara, dengan beberapa nama kota sebagai key dan negara sebagai value.
+        val capital = 0
 
         // TODO 2
         // Akses dan cetak value dari key "Jakarta" menggunakan indeksasi map.
-        println(capital["Jakarta"])
+        println(capital)
 
         // TODO 3
         // Akses dan cetak value dari key "Jakarta" menggunakan fungsi getValue().
-        println(capital.getValue("Jakarta"))
+        println(capital)
 
         // TODO 4
         // Ambil dan cetak semua key dari map capital.
-        val mapKeys = capital.keys
+        val mapKeys = 0
+        println(mapKeys)
 
         // TODO 5
         // Ambil dan cetak semua value dari map capital.
-        val mapValues = capital.values
-        println(mapKeys)
+        val mapValues = 0
         println(mapValues)
 
         // TODO 6
         // Ubah map capital menjadi mutable dan simpan dalam mutableCapital.
-        val mutableCapital = capital.toMutableMap()
+        val mutableCapital = 0
 
         // TODO 7
         // Tambahkan pasangan key-value untuk Amsterdam dan Netherlands ke dalam mutableCapital.
-        mutableCapital["Amsterdam"] = "Netherlands"
+        mutableCapital
 
         // TODO 8
         // Gunakan fungsi put() untuk menambahkan pasangan key-value untuk Berlin dan Germany.
-        mutableCapital.put("Berlin", "Germany")
+        mutableCapital
 
         // TODO 9
         // Akses dan cetak value dari key "Amsterdam" di mutableCapital.
-        println(mutableCapital["Amsterdam"])
+        println(mutableCapital)
 
         // TODO 10
         // Akses dan cetak semua keys dari mutableCapital.
-        println(mutableCapital.keys)
+        println(mutableCapital)
 
         // TODO 11
         // Akses dan cetak value dari key "Amsterdam" di mutableCapital menggunakan getValue().
-        println(mutableCapital.getValue("Amsterdam"))
+        println(mutableCapital)
     }
 }
 

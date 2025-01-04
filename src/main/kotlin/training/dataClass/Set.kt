@@ -6,11 +6,11 @@ class Set {
     fun setTest() {
         // TODO 1
         // Buat set integer bernama integerSet yang berisi elemen 1, 2, 4, 2, 1, 5.
-        val integerSet = setOf(1, 2, 4, 2, 1, 5)
+        val integerSet = 0
 
         // TODO 2
         // Cetak integerSet untuk melihat hasilnya (set tidak mengizinkan elemen duplikat).
-        println("INTEGER SET : $integerSet")
+        println("INTEGER SET : $")
 
         // TODO 3
         // Buat dua set, setA dan setB, dan bandingkan apakah keduanya sama.
@@ -19,38 +19,38 @@ class Set {
 
         // TODO 4
         // Periksa apakah setA dan setB sama dan cetak hasil perbandingan.
-        println(setA == setB)
+        println("")
 
         // TODO 5
         // Periksa apakah angka 5 terdapat dalam setA dan cetak hasilnya.
-        print(5 in setA)
+        print("")
 
         // TODO 6
         // Buat setC dan temukan union dan intersect antara setA dan setC.
-        val setC = setOf(1, 5, 7)
+        val setC = 0
 
         // TODO 7
         // Ambil union (gabungan) dari setA dan setC dan cetak hasilnya.
-        val union = setA.union(setC)
+        val union = 0
 
         // TODO 8
         // Ambil intersect (irisan) antara setA dan setC dan cetak hasilnya.
-        val intersect = setA.intersect(setC)
+        val intersect = 0
 
-        println("UNION : $union")
-        println("INTERSECT : $intersect")
+        println("UNION : $")
+        println("INTERSECT : $")
 
         // TODO 9
-        // Buat mutable set dan tambahkan serta hapus elemen.
-        val mutableSet = mutableSetOf(1, 2, 4, 2, 1, 5)
+        // Buat mutable set berisi elemen 1, 2, 4, 2, 1, 5.
+        val mutableSet =0
 
         // TODO 10
         // Tambahkan elemen 6 ke dalam mutableSet.
-        mutableSet.add(6)
+        mutableSet
 
         // TODO 11
         // Hapus elemen 1 dari mutableSet.
-        mutableSet.remove(1)
+        mutableSet
     }
 }
 

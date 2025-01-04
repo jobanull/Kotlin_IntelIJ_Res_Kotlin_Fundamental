@@ -50,7 +50,7 @@ class EnumTest{
     private val color1  = EnumColors.RED
     private val color2  = EnumColors.GREEN
     private val color3  = EnumColors.BLUE
-    private val number : Array<training.controlFlow.EnumNumber> = training.controlFlow.EnumNumber.entries.toTypedArray()
+    private val number : Array<EnumNumber> = EnumNumber.entries.toTypedArray()
     private val name = EnumName.ASEP
 
     @Test
