@@ -37,8 +37,8 @@ class Set {
         // Ambil intersect (irisan) antara setA dan setC dan cetak hasilnya.
         val intersect = 0
 
-        println("UNION : $")
-        println("INTERSECT : $")
+        println("UNION : $union")
+        println("INTERSECT : $intersect")
 
         // TODO 9
         // Buat mutable set berisi elemen 1, 2, 4, 2, 1, 5.

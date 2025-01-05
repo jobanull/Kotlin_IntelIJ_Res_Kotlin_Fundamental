@@ -17,37 +17,31 @@ class Collection {
         // TODO 1
         // Filter numberList untuk mendapatkan hanya angka genap dan simpan dalam evenList.
 
-        numberList.printSpace
-
         // TODO 2
         // Filter numberList untuk mendapatkan angka yang tidak genap dan simpan dalam notEvenList.
-
-        numberList.printSpace
 
         // TODO 3
         // Map numberList dengan mengalikan setiap elemen dengan 5 dan simpan hasilnya dalam multipliedBy5.
 
-        numberList.printSpace
-
         // TODO 4
         // Hitung jumlah elemen dalam numberList dan cetak hasilnya.
-        println("COUNT : $")
+        println("COUNT : $numberList")
 
         // TODO 5
         // Hitung jumlah elemen dalam numberList yang habis dibagi 3 dan cetak hasilnya.
-        println("MODULUS : $")
+        println("MODULUS : $numberList")
 
         // TODO 6
         // Cetak isi evenList yang berisi angka genap.
-        println("EVEN LIST : $")
+        println("EVEN LIST : $evenList")
 
         // TODO 7
         // Cetak isi notEvenList yang berisi angka yang tidak genap.
-        println("NOT EVEN LIST : $")
+        println("NOT EVEN LIST : $notEvenList")
 
         // TODO 8
         // Cetak hasil perkalian elemen dalam numberList dengan 5.
-        println("MUTIPLIED BY 5 : $")
+        println("MUTIPLIED BY 5 : $multipliedBy5")
 
         // TODO 9
         // Temukan angka ganjil pertama dalam numberList dan cetak hasilnya.
@@ -56,29 +50,29 @@ class Collection {
         // TODO 10
         // Temukan angka ganjil pertama dalam numberList atau null jika tidak ada dan cetak hasilnya.
         val firstOrNullNumber = 0
-        println("FIRST ODD NUMBER : $")
-        println("FIRST ODD OR NULL NUMBER : $")
+        println("FIRST ODD NUMBER : $firstOddNumber")
+        println("FIRST ODD OR NULL NUMBER : $firstOrNullNumber")
 
         // TODO 11
-        // Temukan angka pertama yang lebih besar dari 10 dalam numberList dan cetak hasilnya.
-        val moreThan10 = 0
-        println("MORE THAN 10 : $moreThan10")
+        // Temukan angka pertama yang lebih besar dari 5 dalam numberList dan cetak hasilnya.
+        val moreThan5 = 0
+        println("MORE THAN 5 : $moreThan5")
 
         // TODO 12
         // Hitung total semua angka dalam numberList dan cetak hasilnya.
         val total = 0
-        println("TOTAL : $")
+        println("TOTAL : $total")
 
         // TODO 13
         // Urutkan karakter dalam list kotlinChar secara ascending dan cetak hasilnya.
         val kotlinChar = listOf('k', 'o', 't', 'l', 'i', 'n')
         val ascendingSort = 0
-        println("ASCENDING SORT : $")
+        println("ASCENDING SORT : $ascendingSort")
 
         // TODO 14
         // Urutkan karakter dalam list kotlinChar secara descending dan cetak hasilnya.
         val descendingSort = 0
-        println("DESCENDING SORT : $")
+        println("DESCENDING SORT : $descendingSort")
     }
 }
 
