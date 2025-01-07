@@ -2,21 +2,21 @@ package training.functionalProgramming
 
 import org.junit.Test
 
-typealias Arithmetic = (Int, Int) -> Int
+// TODO 1
+// Buat sebuah typealias bernama Arithmetic untuk fungsi yang menerima dua parameter integer
+// dan mengembalikan nilai integer.
 
 class FunctionType {
-    val sum: Arithmetic = { valueA, valueB ->
-        // TODO 1
-        // Implementasikan operasi penjumlahan antara valueA dan valueB.
-        valueA + valueB // TODO 2
-    }
 
-    val multiply: Arithmetic = { valueA, valueB ->
-        // TODO 3
-        // Implementasikan operasi perkalian antara valueA dan valueB.
-        valueA * valueB // TODO 4
-    }
+    // TODO 2
+    // Buat properti sum bertipe Arithmetic.
+    // Implementasikan fungsi lambda yang menjumlahkan dua nilai integer.
+
+    // TODO 3
+    // Buat properti multiply bertipe Arithmetic.
+    // Implementasikan fungsi lambda yang mengalikan dua nilai integer.
 }
+
 
 class FunctionTypeTest {
     private val functionType = FunctionType()

@@ -3,23 +3,29 @@ package training.functionalProgramming
 import org.junit.Test
 
 class HigherOrderFunction {
-    // Higher-Order Function
-    var sum: (Int) -> Int = { value ->
-        // TODO 1
-        // Implementasikan fungsi yang menjumlahkan nilai dengan dirinya sendiri.
-        value + value // TODO 2
-    }
+    // TODO 1
+    // Buat sebuah properti bertipe lambda dengan nama sum.
+    // Fungsi lambda ini harus menerima satu parameter bertipe Int
+    // dan mengembalikan nilai hasil penjumlahan parameter dengan dirinya sendiri.
 
-    fun higherOrderFun(value: Int, sum: (Int) -> Int) {
-        // TODO 3
-        // Panggil fungsi `sum` dengan parameter `value` dan cetak hasilnya.
-    }
+    // TODO 2
+    // Buat sebuah fungsi bernama higherOrderFun.
+    // Fungsi ini harus menerima dua parameter:
+    // - value: sebuah nilai bertipe Int.
+    // - sum: sebuah fungsi lambda yang menerima Int dan mengembalikan Int.
+    // Implementasikan fungsi untuk memanggil lambda `sum` dengan parameter `value`
+    // dan cetak hasilnya menggunakan println.
 
-    inline fun printResult(value: Int, sum: (Int) -> Int) {
-        // TODO 4
-        // Panggil fungsi `sum` dengan parameter `value` dan cetak hasilnya.
-    }
+    // TODO 3
+    // Buat sebuah fungsi inline bernama printResult.
+    // Fungsi ini menerima dua parameter:
+    // - value: sebuah nilai bertipe Int.
+    // - sum: sebuah fungsi lambda yang menerima Int dan mengembalikan Int.
+    // Implementasikan fungsi untuk memanggil lambda `sum` dengan parameter `value`
+    // dan cetak hasilnya menggunakan println.
+
 }
+
 
 class HigherOrderFunctionTest {
     private val higherOrderFunction = HigherOrderFunction()

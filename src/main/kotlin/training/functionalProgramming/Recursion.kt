@@ -13,12 +13,8 @@ class Recursion {
     tailrec fun factorial(n: Int, result: Int = 1): Int {
         // TODO 3
         // Implementasikan fungsi rekursif dengan tail recursion untuk menghitung faktorial n.
-        val newResult = n * result // TODO 4
-        return if (n == 1) {
-            newResult // TODO 5
-        } else {
-            factorial(n - 1, newResult) // TODO 6
-        }
+        val newResult = 0
+        return 0
     }
 }
 
