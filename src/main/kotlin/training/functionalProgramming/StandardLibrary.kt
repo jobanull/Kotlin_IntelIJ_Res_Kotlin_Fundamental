@@ -49,15 +49,21 @@ class StandardLibrary {
 
         // TODO 11
         // Gunakan let untuk memeriksa panjang string dan mencetak hasilnya, jika message5 tidak null.
-        val message5: String? = null
+        val message5: String = "Joban"
+        val message6: String? = null
         message5
+
+        println("LET : $message5")
 
         // TODO 12
         // Gunakan let untuk mencetak panjang string jika message5 tidak null, atau cetak "message is null" jika null.
-        message5
+        message6
+
+        println("LET NULL : $message6")
 
         // TODO 13
-        // Gunakan also untuk mencetak panjang dari text.
+        // Gunakan also untuk mencetak panjang dari joban.
+        val joban = "IkhdanulJoban"
         val result4 = 0
 
         // TODO 14
