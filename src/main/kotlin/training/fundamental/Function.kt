@@ -3,16 +3,15 @@ package training.fundamental
 import org.junit.Test
 
 class Function {
-    fun function(name: String, age: Int): String {
-        // TODO 1
-        // Kembalikan string dengan format "My name is $name, i'm $age years old".
-        return "" // Placeholder
-    }
 
-    fun function2(name: String, age: Int) =
+    // TODO 1
+    // Buat fun function1 meminta variable name dan age
+    // Kembalikan string dengan format "My name is Joban, i'm 24 years old".
+
+
     // TODO 2
-        // Gunakan pendekatan ekspresi untuk mengembalikan string yang sama.
-        "" // Placeholder
+    // buat fun function2 meminta variable name dan age
+    // Gunakan pendekatan ekspresi untuk mengembalikan string yang sama.
 }
 
 class FunctionTest {
@@ -20,13 +19,13 @@ class FunctionTest {
 
     @Test
     fun functionTest1() {
-        // TODO 3
-        // Uji metode `function` dengan memberikan nama dan umur.
+        val result = function
+        println(result)
     }
 
     @Test
     fun functionTest2() {
-        // TODO 4
-        // Uji metode `function2` dengan memberikan nama dan umur.
+        val result = function
+        println(result)
     }
 }
