@@ -16,31 +16,36 @@ class Expression {
         // TODO 2
         // Gunakan if-else dalam bentuk ekspresi untuk mengevaluasi apakah kantor sudah buka atau tutup.
         // Cetak hasilnya.
+        val openOffice = 8
+        val office = 0
+        println(office)
     }
 
     fun whenExpression(vals: Int) {
         // TODO 3
         // Gunakan when untuk mengevaluasi nilai tertentu (vals).
         // Cetak hasilnya berdasarkan nilai yang diberikan.
+        val value = vals
 
         // TODO 4
         // Gunakan when sebagai ekspresi untuk mengembalikan nilai berdasarkan kondisi.
 
+        val stringOfValue = 0
+        println(stringOfValue)
+
         // TODO 5
         // Gunakan when untuk mengevaluasi tipe data dari suatu variabel (Any).
+        val anyType: Any = 100L
 
         // TODO 6
         // Gunakan when untuk mengevaluasi apakah suatu nilai berada dalam rentang tertentu.
 
         // TODO 7
         // Gunakan when dengan ekspresi bersarang untuk memanfaatkan hasil dari fungsi lain.
+        val registerNumber= 0
     }
 
-    private fun getRegisterNumber(): Int {
-        // TODO 8
-        // Kembalikan nilai random menggunakan fungsi `Random.nextInt`.
-        return 0 // Placeholder
-    }
+    private fun getRegisterNumber(): Int = 0
 }
 
 class ExpressionTest {
@@ -48,19 +53,16 @@ class ExpressionTest {
 
     @Test
     fun ifExpression1Test() {
-        // TODO 9
-        // Uji metode `ifExpression` dengan memberikan contoh nilai.
+        expression.ifExpression(8)
     }
 
     @Test
     fun ifExpression2Test() {
-        // TODO 10
-        // Uji metode `ifExpression2` dengan memberikan contoh nilai jam.
+        expression.ifExpression2(0)
     }
 
     @Test
     fun whenExpressionTest() {
-        // TODO 11
-        // Uji metode `whenExpression` dengan memberikan contoh nilai.
+        expression.whenExpression(10)
     }
 }
