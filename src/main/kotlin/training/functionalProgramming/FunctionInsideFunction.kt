@@ -8,7 +8,7 @@ class FunctionInsideFunction {
     fun sum(valueA: Int, valueB: Int, valueC: Int): Int {
         // TODO 1
         // Periksa apakah valueA, valueB, dan valueC lebih besar dari 0. Jika tidak, lemparkan IllegalArgumentException.
-        return 0 // TODO 2
+        return valueA + valueB + valueC
     }
 
     // Example 2
@@ -17,7 +17,7 @@ class FunctionInsideFunction {
         // Buat fungsi `validateNumber` di dalam `sum2` untuk memeriksa apakah nilai lebih besar dari 0.
         // TODO 4
         // Panggil fungsi `validateNumber` untuk valueA, valueB, dan valueC sebelum menjumlahkan.
-        return 0 // TODO 5
+        return valueA + valueB + valueC
     }
 
     // Example 3
@@ -26,7 +26,7 @@ class FunctionInsideFunction {
         // Buat ekstensi fungsi untuk tipe data `Int` yang memeriksa apakah nilai lebih besar dari 0.
         // TODO 7
         // Panggil ekstensi fungsi `validateNumber` untuk valueA, valueB, dan valueC.
-        return 0 // TODO 8
+        return valueA + valueB + valueC
     }
 }
 

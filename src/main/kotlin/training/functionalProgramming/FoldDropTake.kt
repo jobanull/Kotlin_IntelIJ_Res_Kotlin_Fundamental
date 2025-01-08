@@ -30,6 +30,9 @@ class FoldDropTake {
         val total = 0
         val take = 0
         val takeLast = 0
+
+        println("TAKE : $take")
+        println("TAKE LAST : $takeLast")
     }
 }
 
