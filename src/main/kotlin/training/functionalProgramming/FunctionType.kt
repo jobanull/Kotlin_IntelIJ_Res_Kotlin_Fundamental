@@ -11,10 +11,12 @@ class FunctionType {
     // TODO 2
     // Buat properti sum bertipe Arithmetic.
     // Implementasikan fungsi lambda yang menjumlahkan dua nilai integer.
+    val sum = 0
 
     // TODO 3
     // Buat properti multiply bertipe Arithmetic.
     // Implementasikan fungsi lambda yang mengalikan dua nilai integer.
+    val multiply = 0
 }
 
 
@@ -23,9 +25,7 @@ class FunctionTypeTest {
 
     @Test
     fun functionTypeTest() {
-        // TODO 5
-        // Panggil fungsi `sum` dengan dua angka dan cetak hasilnya.
-        // TODO 6
-        // Panggil fungsi `multiply` dengan dua angka dan cetak hasilnya.
+        val sum = functionType.sum
+        val multiplatform = functionType.multiply
     }
 }

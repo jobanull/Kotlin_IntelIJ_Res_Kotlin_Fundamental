@@ -35,11 +35,11 @@ class FunctionInsideFunctionTest {
 
     @Test
     fun fifTest() {
-        // TODO 9
-        // Panggil fungsi `sum` dengan parameter angka dan cetak hasilnya.
-        // TODO 10
-        // Panggil fungsi `sum2` dengan parameter angka dan cetak hasilnya.
-        // TODO 11
-        // Panggil fungsi `sum3` dengan parameter angka dan cetak hasilnya.
+        val sum = fifTest.sum(1,2,3)
+        val sum2 = fifTest.sum2(1,2,3)
+        val sum3 = fifTest.sum3(1,2,3)
+        println(sum)
+        println(sum2)
+        println(sum3)
     }
 }

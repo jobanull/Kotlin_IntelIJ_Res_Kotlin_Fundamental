@@ -4,20 +4,17 @@ import org.junit.Test
 
 class Lambda {
 
-    val message = {
-        // TODO 1
-        // Implementasikan lambda untuk mencetak "Hello From Lambda".
-    }
+    // TODO 1
+    // Implementasikan lambda pada message untuk mencetak "Hello From Lambda".
+    val message = 0
 
-    val printMessage = { message: String ->
-        // TODO 2
-        // Implementasikan lambda untuk mencetak pesan yang diterima sebagai parameter.
-    }
+    // TODO 2
+    // Implementasikan lambda pada printMessage untuk mencetak pesan yang diterima sebagai parameter.
+    val printMessage = 0
 
-    val messageLength = { message: String ->
-        // TODO 3
-        // Implementasikan lambda untuk mencetak panjang dari string yang diberikan.
-    }
+    // TODO 3
+    // Implementasikan lambda pada messageLength untuk mencetak panjang dari string yang diberikan.
+    val messageLength = 0
 
     // Lambda with Receiver
     fun lambdaWithReceiver(action: StringBuilder.() -> Unit): String {
@@ -35,11 +32,9 @@ class LambdaTest {
     fun lambdaTest() {
         // TODO 6
         // Panggil lambda `message` dan cetak hasilnya.
-        // TODO 7
-        // Panggil lambda `printMessage` dengan parameter "Jajang" dan cetak hasilnya.
-        // TODO 8
-        // Panggil lambda `messageLength` dengan parameter "Asep" dan cetak hasilnya.
-
+        lambda.message
+        lambda.printMessage
+        lambda.messageLength
         // TODO 9
         // Panggil fungsi `lambdaWithReceiver` untuk menggabungkan beberapa kata dan cetak hasilnya.
     }
