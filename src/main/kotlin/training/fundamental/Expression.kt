@@ -38,7 +38,9 @@ class Expression {
         val anyType: Any = 100L
 
         // TODO 6
-        // Gunakan when untuk mengevaluasi apakah suatu nilai berada dalam rentang tertentu.
+        // Gunakan when untuk mengevaluasi values apakah suatu nilai berada dalam rentang tertentu.
+        val values = 27
+        val ranges = 10..50
 
         // TODO 7
         // Gunakan when dengan ekspresi bersarang untuk memanfaatkan hasil dari fungsi lain.
