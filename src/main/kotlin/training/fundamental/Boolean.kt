@@ -7,31 +7,36 @@ class Boolean {
     fun bool1(hour: Int) {
         // TODO 1
         // Tentukan apakah jam (hour) berada dalam rentang 7 hingga 23.
+        val result = 0
 
         // TODO 2
         // Cetak hasil evaluasi boolean tersebut.
+        println(result)
     }
 
     fun bool2(hour: Int) {
         // TODO 3
         // Tentukan apakah jam (hour) berada di luar rentang 7 hingga 18.
+        var result = 0
 
         // TODO 4
         // Cetak hasil evaluasi boolean tersebut.
+        println(result)
     }
 
     fun bool3(hour: Int) {
-        // TODO 5
-        // Buat variabel `open` dengan nilai 7.
+        val open = 7
 
         // TODO 6
         // Tentukan apakah jam (hour) lebih besar dari `open`.
-
+        val newResult = 0
         // TODO 7
         // Gunakan operator `!` untuk membalikkan hasil evaluasi.
+        val result = 0
 
         // TODO 8
         // Cetak hasil evaluasi boolean tersebut.
+        println(result)
     }
 }
 

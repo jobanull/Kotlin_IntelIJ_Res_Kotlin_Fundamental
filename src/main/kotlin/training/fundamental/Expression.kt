@@ -9,6 +9,7 @@ class Expression {
         // TODO 1
         // Gunakan if-else untuk mengevaluasi nilai (value).
         // Cetak hasil evaluasi sesuai kondisi: "Belum Lulus", "Lulus", atau "Lulus dengan nilai sempurna".
+
     }
 
     fun ifExpression2(hour: Int) {

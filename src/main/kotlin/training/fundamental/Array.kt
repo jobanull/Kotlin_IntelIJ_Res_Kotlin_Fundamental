@@ -2,6 +2,11 @@ package training.fundamental
 
 import org.junit.Test
 
+
+fun Int.printSpace(){
+    println("=========================")
+}
+
 class Array {
     fun array() {
         // TODO 1
@@ -23,12 +28,15 @@ class Array {
         // Cetak elemen-elemen dari intArray menggunakan `forEach` loop.
 
         // TODO 7
+        10.printSpace()
         // Cetak elemen-elemen dari array campuran menggunakan `for` loop.
 
         // TODO 8
+        10.printSpace()
         // Cetak elemen-elemen dari `intArray` dengan indeks menggunakan `for` loop.
 
         // TODO 9
+        10.printSpace()
         // Cetak elemen-elemen dari `doubleArray` menggunakan `while` loop.
     }
 }
