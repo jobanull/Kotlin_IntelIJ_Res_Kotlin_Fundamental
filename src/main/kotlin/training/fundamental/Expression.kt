@@ -43,8 +43,9 @@ class Expression {
         // TODO 7
         // Gunakan when dengan ekspresi bersarang untuk memanfaatkan hasil dari fungsi lain.
         val registerNumber= 0
+        println(registerNumber)
     }
-
+    // Lengkapi fungsi ini yang mengembalikan nilai random sampai 100
     private fun getRegisterNumber(): Int = 0
 }
 
